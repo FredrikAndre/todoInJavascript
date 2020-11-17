@@ -112,13 +112,13 @@ function deleteItem(todo) {
     }
 }
 
-    // ** Fungerar Ok **
+    // ** Works Ok **
 function addToLocalStorage(todos) {
     localStorage.setItem('todos', JSON.stringify(todos));
     
 }
 
-    // ** Fungerar Ej Bra **
+    // ** Does not work properly **
 // function getFromLocalStorage() {
 //     let reference = localStorage.getItem('todos');
 
