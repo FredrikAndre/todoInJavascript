@@ -16,7 +16,7 @@ window.onload = function() {
     let todo3 = new Todo('Get Christmas Tree');
     let todo4 = new Todo('Decorate Tree');
 
-    todos.push(todo1); // Samma sak som let todos = [todo1, todo2, todo3, todo4];
+    todos.push(todo1); // Same thing as writing = [todo1, todo2, todo3, todo4];
     todos.push(todo2);
     todos.push(todo3);
     todos.push(todo4);
@@ -112,13 +112,13 @@ function deleteItem(todo) {
     }
 }
 
-    // ** Fungerar Ok **
+    // ** Works Ok **
 function addToLocalStorage(todos) {
     localStorage.setItem('todos', JSON.stringify(todos));
     
 }
 
-    // ** Fungerar Ej Bra **
+    // ** Does not work properly **
 // function getFromLocalStorage() {
 //     let reference = localStorage.getItem('todos');
 

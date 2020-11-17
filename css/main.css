@@ -1,3 +1,4 @@
+/* Global Rules */
 * {
     margin: 0;
     padding: 0;
@@ -16,6 +17,7 @@ body {
     align-items: center;
 }
 
+/* Header Style */
 header h1 {
     margin: 1rem;
     color: #fff;
@@ -27,6 +29,7 @@ header .fas {
     color: #f21616;
 }
 
+/* Todo input and list Div */
 #todolist {
     margin-top: 2rem;
     background-color: rgba(225, 225, 225, 0.1);
@@ -37,6 +40,7 @@ header .fas {
     padding: 1rem;
 }
 
+/* Input form style */
 #inputform {
     background-color: rgba(225, 225, 225, 0.6);
     box-shadow: 1px 1px 10px 1px #616161;
@@ -50,7 +54,6 @@ header .fas {
     padding: 0.5rem;
     border: none;
     outline: none;
-    /* display: inline-block; */
 }
 
 #save {
@@ -83,6 +86,8 @@ header .fas {
     font-size: 1.2rem;
 }
 
+
+/* List Style & Rules */
 #container {
     margin-top: 1rem;
     color: #fff;
