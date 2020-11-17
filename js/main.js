@@ -8,7 +8,7 @@ class Todo {
 
 let todos = [];
 let nextld = 0;
-let desc = false;
+
 
 window.onload = function() {
 
@@ -23,9 +23,9 @@ window.onload = function() {
     todos.push(todo4);
 
     document.getElementById("sort").addEventListener('click', () => {
-    let array = sortArrayBy(todos, 'complete', desc);
+    let array = sortArrayBy(todos, 'complete', descent);
     generateHTML(array);
-    desc = !desc;
+    descent = !descent;
     });
 
     document.getElementById("save").addEventListener('click', createTodo);
@@ -33,17 +33,19 @@ window.onload = function() {
     generateHTML();
 }
 
-function sortArrayBy (array, sort, desc) {
+let descent = false;
+
+function sortArrayBy (array, sort, descent) {
     array.sort(function (a, b) {
         if (a[sort] < b[sort]) return -1;
         if (a[sort] > b[sort]) return 1;
         return 0;
     });
 
-    if (desc) array.reverse();
+    if (descent) array.reverse();
 
     return array;
-    }
+}
 
 function createTodo() {
     let newTodo = document.getElementById("name").value;
