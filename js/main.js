@@ -16,7 +16,7 @@ window.onload = function() {
     let todo3 = new Todo('Get Christmas Tree');
     let todo4 = new Todo('Decorate Tree');
 
-    todos.push(todo1); // Samma sak som let todos = [todo1, todo2, todo3, todo4];
+    todos.push(todo1); // Same thing as writing = [todo1, todo2, todo3, todo4];
     todos.push(todo2);
     todos.push(todo3);
     todos.push(todo4);
