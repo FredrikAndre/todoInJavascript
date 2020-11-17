@@ -56,7 +56,7 @@ function createTodo() {
     let todo = new Todo(newTodo);
 
     todos.push(todo);
-    addToLocalStorage(todos);
+    // addToLocalStorage(todos);
 
     generateHTML();
     }
@@ -93,7 +93,7 @@ function generateHTML() {
         checkElem.addEventListener('click', () => {checkedItem(todos[i]); liTag.classList.toggle('crossed'); });
         deleteElem.addEventListener('click', () => {deleteItem(todos[i]) });
     }
-    
+    console.log(todos);
 }
 
 function checkedItem(todo) {
@@ -113,11 +113,10 @@ function deleteItem(todo) {
     }
 }
 
-    // ** Works Ok **
-function addToLocalStorage(todos) {
-    localStorage.setItem('todos', JSON.stringify(todos));
-    
-}
+//     // ** Works Ok **
+// function addToLocalStorage(todos) {
+//     localStorage.setItem('todos', JSON.stringify(todos));   
+// }
 
     // ** Does not work properly **
 // function getFromLocalStorage() {
