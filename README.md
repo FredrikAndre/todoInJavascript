@@ -1,5 +1,7 @@
 *Todo projekt in Vanilla Javascript*
 
+View at:  https://fredrikandre.github.io/todoInJavascript/
+
 A project in class basic javascript, making a todo list with certain
 features. The list should have hardcoded todos that you can can remove, and all this
 should be made in javascript in for example ul/li form, with as little as possible HTML. 
